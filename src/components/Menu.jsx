@@ -119,7 +119,7 @@ function Menu() {
 
       <div className=" mt-12 grid max-w-6xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
 
-        {coffeeMenu.map((coffee) => (
+        {coffeeMenu.map((coffee,index) => (
           <div
             key={coffee.id}
             className={` overflow-hidden rounded-2xl bg-[#55392f] transition hover:-translate-y-2 ${
