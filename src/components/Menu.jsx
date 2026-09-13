@@ -122,7 +122,9 @@ function Menu() {
         {coffeeMenu.map((coffee) => (
           <div
             key={coffee.id}
-            className="group overflow-hidden rounded-2xl bg-[#55392f] transition hover:-translate-y-2"
+            className={` overflow-hidden rounded-2xl bg-[#55392f] transition hover:-translate-y-2 ${
+    index >= 5 ? 'hidden md:block' : ''
+  }`}
           >
 
             <div className="relative h-60 overflow-hidden">
